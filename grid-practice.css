@@ -7,6 +7,7 @@
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 1fr 4fr 2fr;
   grid-gap: 1rem;
+  grid-auto-flow: dense;
 }
 
 div {
@@ -18,11 +19,13 @@ div {
   color: white;
   background-color: aqua;
   text-align: center;
+  grid-row: span 3;
 }
 .grid-child-2 {
   color: white;
   background-color: coral;
   text-align: center;
+  grid-row: span 2;
 }
 .grid-child-3 {
   color: white;
@@ -38,6 +41,7 @@ div {
   color: white;
   background-color: firebrick;
   text-align: center;
+  grid-column: span 2;
 }
 .grid-child-6 {
   color: white;
@@ -51,7 +55,7 @@ div {
 }
 .grid-child-8 {
   color: white;
-  background-color: lightpink;
+  background-color: yellow;
   text-align: center;
 }
 .grid-child-9 {
