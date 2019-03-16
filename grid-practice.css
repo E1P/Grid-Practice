@@ -3,16 +3,21 @@
 }
 
 .grid-parent {
+  height: 1080px;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-columns: 5em 8fr 1fr;
+  grid-template-rows: 3em 4fr 2fr;
   grid-gap: 1rem;
   grid-auto-flow: dense;
 }
 
 div {
-  padding: 5px;
+  padding: auto 0;
   font-size: 50px;
+}
+
+div:hover {
+  cursor: pointer;
 }
 
 .grid-child-1 {
@@ -63,4 +68,22 @@ div {
   background-color: teal;
   text-align: center;
   grid-column: span 3;
+}
+
+.delay {
+  /* font-size: 14px; */
+  /* transition-property: font-size, color; */
+  transition-duration: 0.5s;
+
+  /* transition-delay: 2s; */
+}
+
+.delay:hover {
+  transition: "font-size" color;
+  transition-duration: 2s;
+  font-size: 500px;
+  /* transition: transform 1s; */
+  /* transform: scale()  */
+  /* transform: rotate(1080deg); */
+  color: red;
 }
